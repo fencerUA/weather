@@ -18,10 +18,6 @@
             <form action="#" id = 'city'>
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id = 'cityName' name = 'cityName'>
                     <option selected>Оберіть Місто</option>
-                    <!-- <div id = "region">
-                      <div id = "citiList"></div>
-                    </div> -->
-
                     <optgroup label="Europe">
                         <option selected="" data-latitude="52.5235" data-longitude="13.4115" data-asl="34">Berlin</option>
                         <option data-latitude="48.8567" data-longitude="2.3510" data-asl="34">Paris</option>
@@ -99,9 +95,19 @@
                       </optgroup>
                   </select>
                 </form>
-                <div id="region"></div>
                 <button type="submit" class="btn btn-primary btn-lg" id = 'weather' value = 'Погода' onclick="weather()">Погода</button>
         </div>
     </div>
+    <script>
+      for(let i=0;i <regions.length;i++){
+          let regionName = regions[i].name;
+          let cities = regions[i].cities;
+          console.log(regionName);
+        for(let y = 0;y <cities.length;y++){
+          console.log(cities[y])
+        }
+      }
+      
+    </script>
 </body>
 </html>
