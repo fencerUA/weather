@@ -9,7 +9,7 @@ function weather(){
     axios.get(url).then(res => {
         // Выводим результат в консоль браузера
         if(res.data){
-            console.log(res.data);
+            // console.log(res.data);
             let cityName = res.data.name;
             let temp = res.data.main.temp;
             let humidity = res.data.main.humidity;
