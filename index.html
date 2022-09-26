@@ -18,7 +18,11 @@
             <form action="#" id = 'city'>
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id = 'cityName' name = 'cityName'>
                     <option selected>Оберіть Місто</option>
-                    <optgroup label="Europe">
+                    <div id = "region">
+                      <div id = "citiList"></div>
+                    </div>
+
+                    <!-- <optgroup label="Europe">
                         <option selected="" data-latitude="52.5235" data-longitude="13.4115" data-asl="34">Berlin</option>
                         <option data-latitude="48.8567" data-longitude="2.3510" data-asl="34">Paris</option>
                         <option data-latitude="51.5002" data-longitude="-0.1262" data-asl="14">London</option>
@@ -92,9 +96,10 @@
                       <optgroup label="Oceanic">
                         <option data-latitude="-35.2820" data-longitude="149.1286" data-asl="605">Canberra</option>
                         <option data-latitude="-41.2865" data-longitude="174.7762" data-asl="20">Wellington</option>
-                      </optgroup>
+                      </optgroup> -->
                   </select>
                 </form>
+                <div id="region"></div>
                 <button type="submit" class="btn btn-primary btn-lg" id = 'weather' value = 'Погода' onclick="weather()">Погода</button>
         </div>
     </div>

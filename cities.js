@@ -13,10 +13,17 @@ let regions = [
     {name:"Oceanic", cities: ["Canberra","Wellington"]}
 ];
 
+for(let i=0;i <regions.concat.length;i++){
+    // let regionName = regions[i].name;
+    let cities = regions[i].cities;
+    for(let y = 0;y <cities.length;y++){
+        console.log(cities[y]);
+    }
+    // console.log(regionName);
+    // console.log(cities.length);
+}
 
 
-let regList = regions.reduce((accumulator, region) => `${accumulator} ${region.name}, `, 'Regions: ');
-console.log(regList);
 
-// console.log(regions[id = 1].cities);
+
 
